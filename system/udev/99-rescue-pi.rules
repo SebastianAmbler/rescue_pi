@@ -1,0 +1,9 @@
+# rescue_pi stable device names (all USB serial)
+# YDLidar T-mini Plus  (Silicon Labs CP2102)
+SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="ydlidar", MODE="0660", GROUP="dialout"
+# WitMotion BWT901CL IMU  (CH340 1a86:7523 — generic, no serial number, keyed by VID:PID)
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="imu", MODE="0660", GROUP="dialout"
+# ESP32 track-drive board  (CH9102 1a86:55d3, keyed by serial)
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="55d3", ATTRS{serial}=="5B61038521", SYMLINK+="esp32hat", MODE="0660", GROUP="dialout"
+# Teensy servo controller
+SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", SYMLINK+="teensy", MODE="0660", GROUP="dialout"

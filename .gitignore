@@ -1,0 +1,25 @@
+# --- colcon generated output (regenerate with deps/do_colcon.sh) ---
+/build/
+/install/
+/log/
+.ros/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# --- kernel module build artifacts (only sources are tracked, in deps/kernel) ---
+*.ko
+*.o
+*.mod
+*.mod.c
+*.mod.o
+*.cmd
+*.symvers
+modules.order
+
+# --- editors / OS ---
+.vscode/
+*.swp
+.DS_Store
